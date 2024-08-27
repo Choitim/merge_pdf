@@ -13,7 +13,7 @@
 
 ## 요구 사항
 
-- Python 3.x
+- `Python` 3.9 이상
 - `tkinter` (GUI 용)
 - `PyPDF2` (PDF 병합 용)
 
