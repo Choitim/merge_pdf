@@ -14,9 +14,45 @@ PDF를 병합하는 Python 프로그램입니다. Tkinter를 사용하여 GUI를
 ## 요구 사항
 
 - `Python` 3.9 이상
-- `tkinter` (GUI 용)
+- `tkinter` (GUI 용) **tkinter가 없으면 코드 자체가 실행이 안될 수 있습니다.**
 - `PyPDF2` (PDF 병합 용)
+</br>
+따라서 tkinter가 있는지 먼저 확인을 해봅시다. (tkinter 뭐 이상한거 아니고, python에서 제공되는 GUI Interface임.
 
+```bash
+python -m tkinter
+```
+
+Tkinter 창이 열려야 합니다. 창이 열리지 않는다면, Python에 tkinter가 포함되지 않은 것이기 때문에 다시 재 설치를 해줘야 합니다. 
+
+**mac의 경우**
+```bash
+brew install tcl-tk
+```
+python 재설치를 진행해줍니다.
+```bash
+brew reinstall python
+```
+
+그 다음 다시 tkinter의 설치 여부를 확인해보고 잘 설치 되었다면 아래 가이드를 계속 진행합니다. 
+
+
+**window의 경우**
+tkinter 설치 여부를 확인한 후 
+```bash
+python -m tkinter
+```
+python 재설치를 진행해줍니다.
+https://docs.python.org/3.12/
+
+    1. "Add Python to PATH" 선택: 설치 화면에서 "Add Python to PATH" 옵션을 체크합니다. 이 옵션을 선택하면, 명령 프롬프트에서 Python을 쉽게 실행할 수 있습니다.
+   
+    2. "Customize installation" 선택: 기본 설정 대신 "Customize installation"을 선택합니다.
+
+    3. Optional Features 선택: "Optional Features" 화면에서 "tcl/tk and IDLE" 항목이 체크되어 있는지 확인합니다. 이 항목이 Tkinter를 설치하게 됩니다.
+
+
+다시 확인해본 다음에 아래 가상환경을 실행하고, 가이드 대로 실행합니다.
 ## 설치 방법
 
 1. **github Clone 하기**:
@@ -63,7 +99,7 @@ PDF를 병합하는 Python 프로그램입니다. Tkinter를 사용하여 GUI를
 
 위 화면에서 pdf 파일 추가 버튼을 클릭하고 병합하고 싶은 순서대로 파일을 넣어서 아래 초록색 병합하기 버튼을 클릭해주시면 됩니다. 버튼을 클릭하면 병합할 파일의 저장 경로를 지정해주고 진행해주시면 됩니다. 
 </br> 
-
+(아마 맥 환경에서 병합하기 버튼이 색깔 때문에 잘 안보일 수도 있음.)
 병합이 성공하게 되면 초록색 글자로 병합이 성공되었다고 뜹니다. 
 
 ---
