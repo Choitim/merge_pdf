@@ -19,7 +19,7 @@ PDF를 병합하는 Python 프로그램입니다. Tkinter를 사용하여 GUI를
 
 ## 설치 방법
 
-1. **저장소 클론하기**:
+1. **github Clone 하기**:
 
    ```bash
    git clone https://github.com/your-username/pdf-merger.git
